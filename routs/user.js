@@ -110,7 +110,7 @@ router.put('/', async (req, res) => {
         res.send(req.body.username)
     }
     catch (err) {
-        res.stasus(500).json(err)
+        res.status(500).json(err)
         console.log(err)
     }
 })

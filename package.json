@@ -1,0 +1,30 @@
+{
+  "name": "extra_task",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "bcrypt": "^5.0.1",
+    "body-parser": "^1.19.0",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "install": "^0.13.0",
+    "jsonwebtoken": "^8.5.1",
+    "lodash": "^4.17.21",
+    "npm": "^7.6.1",
+    "passport": "^0.4.1",
+    "passport-github": "^1.1.0",
+    "passport-google-oauth": "^2.0.0",
+    "passport-twitter": "^1.0.4",
+    "pg": "^8.5.1",
+    "random": "^3.0.3",
+    "shortid": "^2.2.16",
+    "unique-string": "^2.0.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}

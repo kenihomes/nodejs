@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <title>Task-1</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+
+
+</head>
+
+<body onload="showAllUsers()">
+    <div class="container-fluid">
+        <div class="container-fluid">
+            <!-- <div class="userName">
+                <h3 id="currentUserName"></h3>
+            </div>    
+
+            <h4>users</h4> -->
+            <div class="currentUser row">
+                <div class="col-6">
+                    <h4 id="currentUser"> </h4> welcome
+                </div>
+                <div>
+                    <button class="btn btn-danger" onclick="logout()"> log out</button>
+                </div>
+            </div>
+            <div>
+                <ul id="userUl" style="list-style: none;">
+
+                </ul>
+            </div>
+
+            <!-- for product -->
+            <div>
+                <button class="btn" onclick="showproduct()"> Create New Product </button>
+            </div>
+            <div id="createNewProduct" style="display:none;">
+                <div class="row">
+                    <!-- <div class="col-6 mb-2">
+                        <input id="productImage" type='file' accept="image/*">
+                        <img id="productImageShow" height="150">
+                    </div> -->
+                    <div class="col-12 mb-2">
+                        <input type="text" class="form-control" name="productname" placeholder="Enter product name"
+                            id="productName" />
+                    </div>
+                    <div class="col-12 mb-2">
+                        <input type="text" class="form-control" name="compny" placeholder="Enter compnyname"
+                            id="compny" />
+                    </div>
+                    <div class="col-6 mb-2">
+                        <input type="number" id="quantity" name="quantity" placeholder="quantity">
+                    </div>
+                    <div class="col-6 mb-2">
+                        <input type="number" id="price" name="price" placeholder="price">
+                    </div>
+                    <div class="col-4">
+                        <input type="text" class="form-control" name="type" placeholder="Enter Product type"
+                            id="productType" />
+                    </div>
+                    <div class="col-3"></div>
+                    <div class="col-2 mt-3">
+                        <button class="btn btn-primary " onclick="createProduct()">submit</button>
+                    </div>
+                </div>
+            </div>
+            <div onclick=""> Create</div>
+            <div onload="">
+                <ul id="productUl" style="list-style: none;">
+                </ul>
+            </div>
+        </div>
+    </div>
+    <img src="" alt="" id="abc">
+    <script src="./main.js"></script>
+    <script src="./management.js"></script>
+</body>
+
+</html>

@@ -5,25 +5,25 @@ require('dotenv').config()
 
 // Configure the database connection.
 
-const pool = new Pool({ssl: {
-      rejectUnauthorized: false,
-    },})
+// const pool = new Pool({ssl: {
+//       rejectUnauthorized: false,
+//     },})
 
-// const pool =  new Pool ({
-//   user: "kishan",
-//   password: "Savn-d0uDwvm78qY",
-//   host: "free-tier.gcp-us-central1.cockroachlabs.cloud",
-//   database: "steep-boar-1057.defaultdb",
-//   port: 26257,
-//   ssl: {
-//     rejectUnauthorized: false,
-//   },
-//   //For secure connection:
-//   /*ssl: {
-//         ca: fs.readFileSync('/certs/ca.crt')
-//             .toString()
-//     }*/
-// });
+const pool =  new Pool ({
+  user: "kishan",
+  password: "Savn-d0uDwvm78qY",
+  host: "free-tier.gcp-us-central1.cockroachlabs.cloud",
+  database: "steep-boar-1057.defaultdb",
+  port: 26257,
+  ssl: {
+    rejectUnauthorized: false,
+  },
+  //For secure connection:
+  /*ssl: {
+        ca: fs.readFileSync('/certs/ca.crt')
+            .toString()
+    }*/
+});
 
 async function initusers(){
 const res = await pool.query(`CREATE TABLE IF NOT EXISTS users (
